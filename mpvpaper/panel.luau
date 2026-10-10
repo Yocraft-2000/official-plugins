@@ -476,7 +476,7 @@ end
 -- ── Callbacks ──────────────────────────────────────────────────────────────
 
 function onOpen(_context)
-  closeButton = noctalia.getSetting("shell.show_close_buttons")
+  closeButton = noctalia.getSetting("shell.show_close_buttons") ~= false
   -- Seed the slider from the service's last-known interval (seconds). This
   -- ensures the panel shows the right value after restarts.
   local override = noctalia.state.get("slideshowOverride")

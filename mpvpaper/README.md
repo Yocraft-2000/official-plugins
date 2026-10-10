@@ -21,6 +21,8 @@ videos in the selected file’s directory, starting at the one you clicked.
 
 ## Requirements
 
+Requires Noctalia plugin API 26 or newer.
+
 Install `mpvpaper` and `mpv` on `PATH`. `mpvpaper` renders the wallpaper
 surface, and `mpv` renders picker thumbnails.
 
@@ -51,6 +53,9 @@ The plugin works on `wlr-layer-shell` compositors (Niri, Hyprland, Sway, Mango).
 
 Assignments (including the last slideshow interval) persist across restarts. Supported
 files: `mp4`, `webm`, `mkv`, `mov`, `gif`.
+
+The picker’s close button respects the shell’s `shell.show_close_buttons` setting.
+If the setting is missing, the button remains visible.
 
 ## IPC Commands
 
