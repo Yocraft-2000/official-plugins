@@ -55,6 +55,10 @@ noctalia msg panel-toggle noctalia/example:panel
 noctalia msg panel-toggle noctalia/example:dnd
 ```
 
+Both panels respect the shell's `shell.show_close_buttons` setting. Only an
+explicit `false` hides the close button; a missing setting keeps it visible.
+This plugin requires Noctalia plugin API 26.
+
 The panel includes a **Color picker** section. Click **Choose color** to open
 Noctalia's native dialog; applying a color updates the swatch and displays the
 hex value returned to the plugin callback, while cancelling displays the
