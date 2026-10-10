@@ -31,6 +31,8 @@ Thumbnail previews are cached under `$XDG_STATE_HOME/noctalia/wallhaven/thumbs` 
 
 ## Notes
 
+- Requires plugin API 26.
+- The panel close button respects `shell.show_close_buttons`; if the setting is missing, the button remains visible.
 - Requires network access (`[shell].offline_mode` must be off).
 - NSFW results require a Wallhaven API key.
 - Applied wallpapers use `noctalia.setWallpaper(path)` so they persist like any other wallpaper.

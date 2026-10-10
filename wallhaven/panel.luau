@@ -760,7 +760,7 @@ render = function()
 end
 
 function onOpen(_context)
-  closeButton = noctalia.getSetting("shell.show_close_buttons")
+  closeButton = noctalia.getSetting("shell.show_close_buttons") ~= false
   normalizePurityFilters()
   fetchWallpapers()
 end
