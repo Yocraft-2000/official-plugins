@@ -16,6 +16,8 @@ Wallpapers are never uploaded.
 
 ## Requirements
 
+Requires Noctalia plugin API 26.
+
 Install `python3` version 3.11–3.14 with `venv` and `pip` support. Initial setup
 requires network access, and shell offline mode must be disabled.
 
@@ -50,6 +52,9 @@ the bar.
 
 The panel reports generation state for every connected output. **Clear cache**
 removes saved depth maps and masks; the plugin regenerates them when needed.
+
+The panel close button respects the shell's `shell.show_close_buttons` setting.
+If the setting is missing, the close button remains visible.
 
 ## Settings
 
