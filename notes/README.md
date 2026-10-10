@@ -30,6 +30,9 @@ directory you control - yours to sync, edit externally, and grep.
 A pinned **Scratchpad** note always sits at the top of the list - the place to
 dump text instantly without naming anything.
 
+The panel close button respects `shell.show_close_buttons`; if the setting is
+missing, the button stays visible. Requires plugin API 26.
+
 The `/nt` launcher command writes down a thought without opening the panel:
 type it, press Enter, done.
 

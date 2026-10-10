@@ -378,7 +378,7 @@ end
 function onOpen(_context)
   notesDir = noctalia.expandPath(noctalia.getConfig("notes_dir"))
   cornerRadiusScale = noctalia.getSetting("shell.corner_radius_scale")
-  closeButton = noctalia.getSetting("shell.show_close_buttons")
+  closeButton = noctalia.getSetting("shell.show_close_buttons") ~= false
   local extension = noctalia.string.trim(noctalia.getConfig("extension")):gsub("^%.", "")
   if extension == "" then
     noctalia.notifyError(tr("title"), tr("bad_extension"))
