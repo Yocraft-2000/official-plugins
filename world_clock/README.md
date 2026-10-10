@@ -77,6 +77,7 @@ noctalia msg plugin noctalia/world_clock:service all clear
 
 ## Notes
 
-Requires `plugin_api = 19` for timezone formatting and `noctalia.timeFormat()` /
-`noctalia.isValidTimezone()`. Display times follow the `time_format` setting,
-falling back to `[shell].time_format`.
+Requires `plugin_api = 26`. The panel close button respects
+`shell.show_close_buttons`; if the setting is missing, the button remains visible.
+Timezone formatting uses `noctalia.timeFormat()` / `noctalia.isValidTimezone()`.
+Display times follow the `time_format` setting, falling back to `[shell].time_format`.

@@ -7,8 +7,8 @@
 
 id = "noctalia/world_clock"
 name = "World Clock"
-version = "1.2.0"
-plugin_api = 19
+version = "1.2.1"
+plugin_api = 26
 author = "noctalia"
 license = "MIT"
 dependencies = []
