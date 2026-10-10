@@ -306,7 +306,7 @@ function onCloseClicked()
 end
 
 function onOpen(_context)
-  closeButton = noctalia.getSetting("shell.show_close_buttons")
+  closeButton = noctalia.getSetting("shell.show_close_buttons") ~= false
   snapshot = noctalia.state.get("umbriel.state") or snapshot
   -- The snapshot is whatever the stream last pushed. An empty request asks the
   -- service to confirm the stream is still alive before the user acts on it.

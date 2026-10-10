@@ -18,6 +18,7 @@ Manifest id `noctalia/umbriel-companion`.
 
 ## Requirements
 
+- Noctalia plugin API 28 or newer.
 - `umbriel` on `PATH`, inside a running Umbriel session, with the `workspaces` and `submap` subscription families.
   Every other compositor gets a hidden widget and an inert panel.
 
@@ -27,6 +28,8 @@ Add the **Umbriel Companion** widget to a bar from Settings → Bar, or open the
 
 The panel targets the workspace Umbriel considers focused - the active workspace of the focused output - and names it
 at the top, because that is the workspace `workspace-set-layout` acts on, not the one the panel is drawn over.
+
+The panel close button respects `shell.show_close_buttons`; if the setting is missing, the button stays visible.
 
 - **Layout** - Scrolling, Dwindle, Master. The current layout is highlighted. The override lasts until a config
   reload reasserts the configured mode.
